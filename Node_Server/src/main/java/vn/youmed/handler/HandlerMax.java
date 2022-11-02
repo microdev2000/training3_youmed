@@ -61,7 +61,7 @@ public class HandlerMax {
 								+ arr[i] + " %");
 					}
 					if (flag == arr.length) {
-						timerId = vertx.setPeriodic(5000, k -> {
+						timerId = vertx.setPeriodic(2000, k -> {
 							System.out.println("Trying again..........." + (counter + 1));
 							Future<String> subFuture = Future.future();
 							subFuture.setHandler(sa -> {
