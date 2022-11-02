@@ -69,7 +69,6 @@ public class HandlerMax {
 									future.fail("Server is overloaded");
 									vertx.cancelTimer(timerId);
 								} else {
-									System.out.println("bbaaaaaaaaaaaaaaaaaa");
 									future.complete(sa.result());
 									vertx.cancelTimer(timerId);
 								}
